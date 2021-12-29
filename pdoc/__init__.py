@@ -406,7 +406,9 @@ def _is_public(ident_name):
     Returns `True` if `ident_name` matches the export criteria for an
     identifier name.
     """
-    return not ident_name.startswith("_")
+    #return not ident_name.startswith("_")
+    return not ident_name.startswith("__")
+    #return True
 
 
 def _is_function(obj):
